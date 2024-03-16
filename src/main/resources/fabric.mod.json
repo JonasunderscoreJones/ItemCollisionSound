@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "itemcollisionsound",
+	"version": "${version}",
+	"name": "Item Collision Sound",
+	"description": "Play a sound when a dropped item collides with blocks!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/JonasunderscoreJones/ItemCollisionSound",
+		"issues": "https://github.com/JonasunderscoreJones/ItemCollisionSound/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/itemcollisionsound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.jonasjones.ItemCollisionSound"
+		]
+	},
+	"mixins": [
+		"itemcollisionsound.mixins.json",
+		{
+			"config": "itemcollisionsound.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
