@@ -21,11 +21,7 @@
 		]
 	},
 	"mixins": [
-		"itemcollisionsound.mixins.json",
-		{
-			"config": "itemcollisionsound.client.mixins.json",
-			"environment": "client"
-		}
+		"itemcollisionsound.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
